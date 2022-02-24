@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>This is the home page</h1>
+<p>
+    {{ my_text }}, {{ my_number }}, {{my_list}}
+</p>
+    <ul>
+        {% for my_sub_itm in my_list %}
+            <li>{{ forloop.counter }} {{ my_sub_itm }}</li>
+        {% endfor %}
+
+
+    </ul>
+
+{% endblock %}
